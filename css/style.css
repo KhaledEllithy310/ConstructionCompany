@@ -1,0 +1,378 @@
+:root {
+  --main-color: rgb(241 196 15);
+  --main-padding: 50px;
+  --main-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+.p-100{
+  padding-top: 100px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/* Start Contact */
+.contact {
+  padding-top: calc(var(--main-padding) - 35px);
+  padding-bottom: calc(var(--main-padding) - 35px);
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  background-color: var(--main-color);
+}
+
+.contact a {
+  color: black;
+  margin-left: 20px;
+  padding: 10px;
+}
+/* End Contact */
+
+/* Start Header */
+
+.header {
+  background-color: rgb(44 52 54);
+}
+.header .navbar {
+  margin: 0 -1rem;
+}
+
+.header .navbar-brand {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+.header .navbar-brand p {
+  color: #fff;
+  font-size: 17px;
+  text-transform: none;
+}
+/* End Header */
+
+/* Start home */
+
+.home {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.home img {
+  height: 80vh;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.456);
+  z-index: 0;
+}
+
+.home .title {
+  color: rgb(255 255 255 / 69%);
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.home h1 {
+  font-size: 35px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.home h1 span {
+  color: var(--main-color);
+}
+
+.home .article {
+  color: rgb(255 255 255 / 69%);
+  margin-top: 30px;
+}
+
+.home__body {
+  margin-bottom: 200px;
+}
+
+.home__body .main__btn {
+  margin-top: 20px;
+}
+/* End home */
+
+/* Start our company */
+.our__company {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.our__company__left h2 {
+  font-size: 35px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.our__company__left .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.our__company__left .article1 {
+  font-weight: 500;
+  margin: 15px 0 40px;
+}
+
+.our__company__left .article2 {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.main__btn {
+  color: white;
+  background-color: var(--main-color);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+/* End our company */
+
+/* Start choose us */
+
+.choose__us {
+  background-color: rgb(240 255 255);
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.main__heading h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.main__heading p {
+  font-weight: 500;
+}
+
+.choose__us__item__icon i {
+  font-size: 30px;
+  border: 8px solid var(--main-color);
+  box-shadow: 0 0 30px var(--main-color);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.choose__us__item__title {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.choose__us__item__icon {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+/* End choose us */
+
+/* Start our service */
+.our_services {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.card-title {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card {
+  border: none;
+}
+
+/* End our service */
+
+/* Start ask question */
+
+.ask__question {
+  background-color: var(--main-color);
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.ask__question h2,
+.ask__question h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ask__question h3 {
+  font-size: 43px;
+  font-weight: 300;
+}
+
+.ask__question .main__btn {
+  background-color: rgb(53 58 64);
+  width: 100%;
+  padding: 6px 10px;
+}
+
+/* End ask question */
+
+/* Start footer */
+
+.footer {
+  background-image: url("../images/6.png");
+  background-position: 10% 5%;
+  background-size: cover;
+  position: relative;
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.573);
+}
+
+.footer li a {
+  transition: 0.3s;
+}
+
+.footer li a:hover {
+  padding-left: 15px;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.footer__top {
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.footer__about h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.footer__about h3 span {
+  color: var(--main-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.footer__article {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer__icons i {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  text-align: center;
+  line-height: 30px;
+  color: black;
+  font-size: 16px;
+}
+
+.footer__links li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+.footer__links a,
+.footer__posts a {
+  text-transform: capitalize;
+  color: white;
+  font-size: 18px;
+}
+
+.footer__posts li {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.footer__posts li i {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  font-size: 30px;
+}
+
+.footer__contact li {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer__contact li i {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  font-size: 20px;
+}
+
+/* End footer */
+
+/* Start copyright   */
+.copy__right {
+  padding-top: calc(var(--main-padding) - 30px);
+  padding-bottom: calc(var(--main-padding) - 30px);
+  background-color: rgb(44 52 54);
+  color: white;
+  text-transform: uppercase;
+}
+
+.copy__right h4 {
+  font-size: 20px;
+}
+.copy__right h4 span {
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+/* End copyright   */
